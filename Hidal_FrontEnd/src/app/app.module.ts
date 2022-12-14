@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { SongListComponent } from './song-list/song-list.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BottomBarComponent,
-    SongListComponent
+    SongListComponent,
+    TopBarComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule,
