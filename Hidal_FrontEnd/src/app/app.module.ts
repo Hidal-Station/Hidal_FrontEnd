@@ -8,6 +8,7 @@ import { SongListComponent } from './song-list/song-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,11 @@ import { HomePageComponent } from './home-page/home-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      { path: '', component: HomePageComponent},
+      { path: 'admin', component: SongListComponent},
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
