@@ -75,7 +75,6 @@
   
   .main-container {
     margin-left: 245px;
-    margin-bottom: 100px;
   }
   
   .spotify-playlists {
@@ -88,12 +87,13 @@
   }
   .spotify-playlists .list {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     overflow: hidden;
   }
   .spotify-playlists .list .item {
-    min-width: 140px;
-    width: 160px;
+    min-width: 10%;
+    max-width: 17%;
     padding: 15px;
     background-color: #181818;
     border-radius: 6px;

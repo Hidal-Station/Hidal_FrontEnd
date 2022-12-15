@@ -7,6 +7,7 @@ import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { SongListComponent } from './song-list/song-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     BottomBarComponent,
     SongListComponent,
     TopBarComponent,
-    SideBarComponent
+    SideBarComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
