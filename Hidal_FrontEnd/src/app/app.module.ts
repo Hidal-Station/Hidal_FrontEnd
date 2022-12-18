@@ -5,16 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { SongListComponent } from './song-list/song-list.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     BottomBarComponent,
-    SongListComponent
+    SongListComponent,
+    TopBarComponent,
+    SideBarComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      { path: '', component: HomePageComponent},
+      { path: 'admin', component: SongListComponent},
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
