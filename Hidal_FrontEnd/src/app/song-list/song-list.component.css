@@ -9,6 +9,17 @@
   height: 340px;
   background: #17bb58;
   float: left;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+.banner-title {
+  font-size: xx-large;
+  font-weight: bold;
+  padding-left: 5%;
+  padding-bottom: 3%;
+  color: whitesmoke;
+  text-shadow: 3px 4px 7px rgba(4, 46, 10, 0.8);
 }
 
 .box {
@@ -45,6 +56,17 @@
   justify-content: space-evenly;
   text-align: center;
   box-shadow: #139246;
+  text-shadow: 3px 4px 7px rgba(4, 46, 10, 0.8);
+  cursor: pointer;
+}
+.uploader:hover {
+  scale: 1.01;
+}
+.center {
+  justify-content: center;
+}
+.right {
+  justify-content: end;
 }
 
 #list {
@@ -58,16 +80,17 @@
 
 .head {
   display: grid;
-  grid-template-columns: 60% 20% 20% 10%;
+
+  grid-template-columns: 40% 29% 29% 2%;
   grid-template-rows: 35px;
-  gap: 16px;
   color: #b3b3b3;
-  background-color: #136a92;
+  background-color: #121212;
   padding: 0px 16px;
   line-height: 25.6px;
   align-items: center;
   text-align: left;
   margin-bottom: 16px;
+
 }
 
 .head .sharp {
@@ -75,7 +98,8 @@
 }
 
 .head .head-title {
-  display: -webkit-box;
+  min-width: max-content;
+  display: flex;
   font-size: 12px;
   letter-spacing: 1.2px;
   line-height: 19.2px;
@@ -90,8 +114,7 @@
   border-width: 1px;
   color: white;
   display: grid;
-  gap: 16px;
-  grid-template-columns: 60% 20% 20% 10%;
+  grid-template-columns: 40% 29% 29% 2%;
   grid-template-rows: 54px;
   line-height: 25.6px;
   padding: 0px 16px;
@@ -144,5 +167,45 @@
 }
 .monitor {
   display: flex;
-  align-items: center;
+  
 }
+.monitor-box {
+  display: flex;
+  min-width: 111px;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.monitor-box .icon {
+  width: 16px;
+  height: 16px;
+  color: blueviolet;
+  font-size: larger;
+  line-height: 14px;
+}
+.monitor-box .icon:hover {
+  color: rgb(173, 118, 224);
+  scale: 1.2;
+  transition-duration: 200ms;
+}
+.duration {
+  max-width: max-content;
+}
+.editor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.editor .icon {
+  width: 20px;
+  height: 20px;
+  color: rgb(255, 8, 0);
+  font-size: larger;  
+}
+.editor .icon:hover {
+  color: rgb(255, 132, 132);
+  scale: 1.2;
+  transition-duration: 200ms;
+}
+
