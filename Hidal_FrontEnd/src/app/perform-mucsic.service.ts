@@ -1,14 +1,19 @@
 import { Injectable } from '@angular/core';
 import { PerformanceMusic } from './performanceMusic';
 import { PerformanceMusics } from './performanceMusic';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PerformMucsicService {
   data = PerformanceMusics;
-  constructor() { }
-  
+  constructor(private http:HttpClient) { }
+  getData(){
+    let url ="https://localhost:44375/api/app/performance-music/music";
+    return this.http.get(url,{observe:'body',responseType:'json'});
+  }
+
 
   SongItems: PerformanceMusic[] = [];
 
