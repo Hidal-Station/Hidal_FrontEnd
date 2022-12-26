@@ -176,3 +176,8 @@
     border-radius: 40px;
     cursor: pointer;
   }
+  .playeR {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+  }
