@@ -1,17 +1,37 @@
 export interface PerformanceMusic {
+  creationTime:string;
+  creatorId:string;
+  deleterId:string;
+  deletionTime:string;
   id: string;
+  image: string;
+  isDeleted: boolean;
+  lastModificationTime: string;
+  lastModifierId: string;
+  musicFile: string;
+  numberOfRating: string;
+  ratingAverage: string;
   singerName: string;
   songName: string;
-  url: string;
+  viewed: string;
 }
 
-export const PerformanceMusics = [
-  {
-    id: '7ed3c561-143c-4d50-92f1-8d5c686d93a8',
-    singerName: 'TommyTeo',
-    songName: 'AlabaTrap',
-    url: '/UploadFile/host/music/AlabaTrap-TommyTeo-7ed3c561-143c-4d50-92f1-8d5c686d93a8.mp3',
-  },
-];
+export const APerformanceMusic = {
+  creationTime:'string',
+  creatorId:'string',
+  deleterId:'string',
+  deletionTime:'string',
+  id: 'string',
+  image: 'string',
+  isDeleted: false,
+  lastModificationTime: 'string',
+  lastModifierId: 'string',
+  musicFile: 'string',
+  numberOfRating: 'string',
+  ratingAverage: 'string',
+  singerName: 'string',
+  songName: 'string',
+  viewed: 'string',
+};
 
 

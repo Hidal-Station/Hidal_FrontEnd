@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {PerformMucsicService} from './perform-mucsic.service'
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

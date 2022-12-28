@@ -10,6 +10,8 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { MusicPlayerComponent } from './music-player/music-player.component';
+import { FileUploadModule } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
@@ -18,10 +20,12 @@ import { HttpClientModule } from '@angular/common/http';
     SongListComponent,
     TopBarComponent,
     SideBarComponent,
-    HomePageComponent
+    HomePageComponent,
+    MusicPlayerComponent
   ],
   imports: [
     BrowserModule,
+    FileUploadModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot([
