@@ -11,6 +11,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MusicPlayerComponent } from './music-player/music-player.component';
+import { FileUploadModule } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MusicPlayerComponent } from './music-player/music-player.component';
   ],
   imports: [
     BrowserModule,
+    FileUploadModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot([

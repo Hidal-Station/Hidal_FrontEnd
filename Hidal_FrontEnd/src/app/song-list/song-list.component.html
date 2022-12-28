@@ -8,7 +8,8 @@
     <div class="box">
         <div class="tool-box">
             <div id="uploader-frame">
-                <button class="uploader" (click)="fakeUpload()">
+                <button class="uploader" (click)="upload()">
+                    <input id="input" style="width: 0;" type="file" class="file-upload" (change)="ChangeUpload($event.target)" multiple>
                     <a class="fa fas fa-solid fa-upload"></a>
                     <span> Upload </span>
                 </button>
@@ -23,18 +24,16 @@
                 </div>
             </div>
             <div class="item" *ngFor="let perform of performanceSongs">
-                <div class="song">
+                <div class="song" (click)="selectToLoad(perform);setCurrentSongData(perform)">
                     <span class="fas fa-music-note"></span>
-                    <img src="https://avatar-ex-swe.nixcdn.com/song/2022/09/23/2/3/3/a/1663924304766_640.jpg">
+                    <img src={{perform.image}} >
                     <div class="text">
                         <div class="song_name">{{perform.songName}}</div>
                         <a href="#">{{perform.singerName}}</a>
                     </div>
                 </div>
                 <div class="view">
-                    <audio controls autoplay>
-                        <source src="https://7199-2402-800-6294-ccf2-8954-de15-c0f4-fa21.ap.ngrok.io/UploadFile/host/music/AlabaTrap-TommyTeo-7ed3c561-143c-4d50-92f1-8d5c686d93a8.mp3" type="audio/ogg">
-                      </audio>
+                    {{perform.viewed}}
                 </div>
                 <div class="monitor right">
                     <div class="monitor-box">
